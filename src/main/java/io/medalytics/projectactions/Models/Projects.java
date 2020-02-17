@@ -1,10 +1,7 @@
 package io.medalytics.projectactions.Models;
 
 import io.medalytics.projectactions.Util.BaseModel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "projects")
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
